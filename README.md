@@ -22,19 +22,23 @@ function report(obj, type) {
 
 report(stream, 'Stream');
 report(Util, 'Object');
+report(Util, 'object');
 report(true, 'boolean');
 report(false, 'boolean');
 report(100, 'number');
 report("string", 'number');
+report("string", 'string');
 report(new Actor(), 'Actor');
 report(new Actor(), 'Handler');
 
 YES! is a Stream
 YES! is a Object
+YES! is a object
 YES! is a boolean
 YES! is a boolean
 YES! is a number
 Nope! not a number
+YES! is a string
 YES! is a Actor
 YES! is a Handler
 
