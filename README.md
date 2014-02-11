@@ -37,6 +37,5 @@ YES! is a number
 Nope! not a number
 YES! is a Actor
 YES! is a Handler
-YES! is a string
 
 ```
