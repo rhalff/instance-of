@@ -6,7 +6,7 @@ module.exports = function InstanceOf(obj, type) {
     if(obj.constructor.name === type) return true;
     return InstanceOf(Object.getPrototypeOf(obj), type);
   } else {
-    if(t === 'Array' && type.toLowerCase() === t) return true; // Array === array
+    if(t === 'Array' && t.toLowerCase() === type) return true; // Array === array
     return t === type;
   }
 };
