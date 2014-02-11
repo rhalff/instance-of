@@ -1,0 +1,13 @@
+{
+  "name": "instance-of",
+  "description": "Use Instance Of by type name",
+  "version": "1.0.0",
+  "author": "Rob Halff",
+  "main": "main",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rhalff/instance-of.git"
+  },
+  "license": "MIT",
+  "keywords": "instanceof, instance, type, validation, validate"
+}
