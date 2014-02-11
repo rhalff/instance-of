@@ -4,8 +4,13 @@
 Usage:
 
 ```
-
 var InstanceOf = require('instance-of');
+
+// example objects.
+var Stream = require('stream'),
+  Util = require('util'),
+  Actor = require('chix-flow').Actor,
+  stream = new Stream();
 
 function report(obj, type) {
   if(InstanceOf(obj, type)) {
@@ -15,7 +20,7 @@ function report(obj, type) {
   }
 }
 
-report(obj, 'Stream');
+report(stream, 'Stream');
 report(Util, 'Object');
 report(true, 'boolean');
 report(false, 'boolean');
