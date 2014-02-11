@@ -3,7 +3,7 @@
 
 Usage:
 
-```
+```javascript
 var InstanceOf = require('instance-of');
 
 // example objects.
