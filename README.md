@@ -27,6 +27,8 @@ report(true, 'boolean');
 report(false, 'boolean');
 report(100, 'number');
 report("string", 'number');
+report(new Array(), 'array');
+report(new Array(), 'Array');
 report("string", 'string');
 report(new Actor(), 'Actor');
 report(new Actor(), 'Handler');
@@ -38,6 +40,8 @@ YES! is a boolean
 YES! is a boolean
 YES! is a number
 Nope! not a number
+YES! is a array
+YES! is a Array
 YES! is a string
 YES! is a Actor
 YES! is a Handler
