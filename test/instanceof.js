@@ -1,10 +1,9 @@
 var instanceOf = require('../');
-var stream     = require('stream');
 var test       = require('tape');
 
 test('type checking', function (t) {
 
-  t.plan(10);
+  t.plan(12);
 
   t.ok(instanceOf(true, 'boolean'), 'true is a boolean');
   t.ok(instanceOf(false, 'boolean'), 'true is a boolean');
@@ -15,6 +14,8 @@ test('type checking', function (t) {
   t.ok(instanceOf({}, 'object'), 'Object is an object');
   t.ok(instanceOf({}, 'Object'), 'Object is an Object');
   t.ok(instanceOf(instanceOf, 'function'), 'instanceOf is a function');
-  t.ok(instanceOf(new stream(), 'Stream'), 'stream is a Stream');
+  t.ok(instanceOf(new test.Test(), 'Test'), 'Test is a Test');
+  t.ok(instanceOf(new test.Test(), 'EventEmitter'), 'Test is an EventEmitter');
+  t.ok(instanceOf(new test.Test(), 'Object'), 'Test is an Object');
 
 });
