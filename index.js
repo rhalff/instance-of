@@ -1,5 +1,5 @@
 module.exports = function InstanceOf(obj, type) {
-  if(obj === null) return false;
+  if(obj === null) return type === 'null';
   if(type === 'array') type = 'Array';
   var t = typeof obj;
   if(t === 'object') {
