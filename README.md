@@ -1,3 +1,5 @@
+[![browser support](https://ci.testling.com/rhalff/instance-of.png)](https://ci.testling.com/rhalff/instance-of)
+
 ## Instance Of
 ===================================
 

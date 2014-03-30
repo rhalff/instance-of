@@ -1,13 +1,31 @@
 {
   "name": "instance-of",
   "description": "Use Instance Of by type name",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Rob Halff",
-  "main": "main",
   "repository": {
     "type": "git",
     "url": "git://github.com/rhalff/instance-of.git"
   },
   "license": "MIT",
-  "keywords": "instanceof, instance, type, validation, validate"
+  "keywords": "instanceof, instance, type, validation, validate",
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "devDependencies": {
+    "tape": "^2.12.1"
+  }
 }
