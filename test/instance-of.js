@@ -1,4 +1,4 @@
-var instanceOf = require('../');
+var instanceOf = require('../index');
 var test       = require('tape');
 
 test('type checking', function (t) {
